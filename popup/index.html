@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bloc de notes ràpid</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Bloc de Notes</h1>
+      <div id="theme-toggle">
+        <img src="../icons/theme-toggle.png" alt="Canviar tema">
+      </div>
+    </header>
+    <div id="notes-list"></div>
+    <textarea id="note-textarea" placeholder="Escriu les teves notes aquí..."></textarea>
+    <div id="stats">
+      <div class="stat-item">
+        <strong>Paraules:</strong> <span id="word-count">0</span>
+      </div>
+      <div class="stat-item">
+        <strong>Caràcters:</strong> <span id="character-count">0</span>
+      </div>
+    </div>
+    <button id="save-button">Desa</button>
+    <script src="../background.js"></script>
+    <script src="theme.js"></script>
+    <script src="stats.js"></script>
+    <script src="notes.js"></script>
+  </body>
+</html>
